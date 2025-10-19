@@ -90,7 +90,7 @@ createRoot(document.getElementById("root")).render(
               help me learn and showcase my development journey.
             </p>
             <div>
-              <h3 className="font-semibold text-3xl tracking-widest mb-2">
+              <h3 className="font-semibold text-2xl md:text-3xl tracking-widest mb-2">
                 education
               </h3>
               <div className="flex gap-4 items-start">
@@ -104,7 +104,7 @@ createRoot(document.getElementById("root")).render(
               </div>
             </div>
             <div>
-              <h3 className="font-semibold text-3xl tracking-widest mb-2">
+              <h3 className="font-semibold text-2xl md:text-3xl tracking-widest mb-2">
                 experience <span className="font-Acorn">&</span> projects
               </h3>
               <ul className="text-xs tracking-wide space-y-4">
