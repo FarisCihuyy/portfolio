@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Acorn";
+  src: url("/fonts/Acorn/Acorn-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acorn";
+  src: url("/fonts/Acorn/Acorn-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Gt-Planar";
+  src: url("/fonts/gt-planar/GT-Planar-Regular-Trial-BF63bcd9a5c44bb.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gt-Planar";
+  src: url("/fonts/gt-planar/GT-Planar-Medium-Trial-BF63bcd77600d58.otf")
+    format("opentype");
+  font-weight: 500;
+}
+
+@theme {
+  --color-primary: #fffadc;
+  --color-secondary: #043915;
+  --color-text-primary: #2d4f2b;
+
+  --font-Acorn: "Acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-Gt-Planar: "Gt-Planar", sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-scale: fadeIn 0.5s ease-in, scale 1s linear 0.5s infinite;
+  --animate-twinkle: twinkle 1s step-start infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) translateX(120px);
+    }
+    40% {
+      transform: translateY(-30px) translateX(-20px);
+    }
+    60% {
+      transform: translateY(-100px) translateX(30px);
+    }
+  }
+
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes twinkle {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+* {
+  @apply selection:bg-text-primary selection:text-primary;
+}
+
+body {
+  @apply max-w-[1333px] mx-auto font-Gt-Planar text-text-primary bg-primary;
+}
+
+.text-highlight {
+  @apply px-1 bg-text-primary text-primary;
+}
+
+@media (min-width: 768px) and (min-height: 660px) {
+  .hero {
+    height: 60vh;
+  }
+}
