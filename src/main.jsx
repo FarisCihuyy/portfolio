@@ -43,7 +43,7 @@ createRoot(document.getElementById("root")).render(
           <h1 className="font-Acorn text-6xl font-bold relative lg:text-8xl">
             Hi! I’m Faris.
             <Twinkle />
-            <span className="absolute -top-10 -right-15 rotate-3 animate-scale">
+            <span className="absolute -top-15 -right-5 rotate-3 animate-scale">
               <Sparkle size={50} fill="white" />
             </span>
             <span className="lg:block hidden absolute -bottom-20 -left-20 rotate-3 animate-scale">
