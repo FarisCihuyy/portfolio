@@ -78,7 +78,7 @@ createRoot(document.getElementById("root")).render(
           </span>
           me
         </h2>
-        <div className="relative px-6 pt-4 pb-12 lg:px-16 w-full lg:flex lg:justify-between lg:gap-20 lg:items-start">
+        <div className="relative px-6 pt-4 pb-12 lg:px-16 w-full max-lg:space-y-20 lg:flex lg:justify-between lg:gap-20 lg:items-start">
           <div className="flex-1 space-y-6">
             <p className="leading-5 text-sm text-justify">
               I’m a Frontend Web Developer who’s passionate about building
